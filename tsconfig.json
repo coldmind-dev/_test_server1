@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"removeComments":                   true,
+		"target":                           "ES6",
+		"module":                           "CommonJS",
+		"moduleResolution":                 "Node",
+		"strict":                           false,
+		"rootDir":                          "./",
+		"baseUrl":                          "./",
+		"esModuleInterop":                  true,
+
+		"outDir":                           "./_build_",
+		"declaration":                      true,
+		"declarationDir":                   "./_build_",
+
+		"experimentalDecorators":           true,
+		"emitDecoratorMetadata":            true,
+		"paths":                            {
+			"@server/*":  [ "./src/server/*" ],
+			"@msg/*":     [ "./src/messages/*" ]
+		}
+	},
+	"include":         [
+		"src/**/*"
+	],
+	"exclude": [
+		"**/_exclude/**",
+		"./node_modules"
+	]
+}
+
